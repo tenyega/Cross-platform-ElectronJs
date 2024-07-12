@@ -9,7 +9,11 @@ function createWindow() {
     const win = new BrowserWindow({
       //Sets the width of the window to 800 pixels.
     width: 800,
-    height: 600,
+      height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js'),
+      openai: path.join(__dirname,'openai.js')
+      }
   
   })
 //This method loads the specified HTML file (index.html) into the window. This file should be located in the root directory of your project.
