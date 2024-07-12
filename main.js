@@ -1,6 +1,8 @@
 
 //Importing electron js in our file 
 const { app, BrowserWindow } = require('electron')
+const path = require('node:path');
+
 
 //The provided code is a simple function to create a browser window using Electron, a framework for building cross-platform desktop applications with web technologies.
 
@@ -18,6 +20,7 @@ function createWindow() {
   })
 //This method loads the specified HTML file (index.html) into the window. This file should be located in the root directory of your project.
   win.loadFile('index.html')
+ 
 }
 
 app.whenReady().then(() => {
