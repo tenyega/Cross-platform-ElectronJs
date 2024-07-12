@@ -1,0 +1,18 @@
+/* here we have not used the installation of tailwind but directly using cdn link in this project  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Reddit Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playwrite DK Uloopet", cursive;
+}
